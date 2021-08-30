@@ -1,0 +1,6 @@
+# MATRIX FACTORIZATION TECHNIQUES FOR RECOMMENDER RSYSTEMS
+Este paper habla sobre los principales detalles de sistemas recomemandores que se basan en factorizacion de matrices. En general es un paper introductorio y facil de leer, aunque contiene suficiente detalle con el cual me sentiria comodo haciendo una implementacion propia de los sistemas. Esto lo encuentro fantastico, ya que significa que esta todo claro y bien explicado.
+
+En general el paper parte con un resumen de las estrategias tipicas de SysRec, y despues se enfoca en los metodos de fac. de matrices. En estos parte desde el modelo mas basico pero funcional del sistema, y le va agregando variables y complejizandolo a medida que explica como va afecando estos cambios. Algo que no se me habria ocurrido inmediatamente de ocupar como feature es la componente temporal, la cual en retrospectiva tiene mucho sentido, y es impresionante el salto en rendimiento que se dio al agregarlas. Por sierto lado, es interesante pensar que significa que esta variable mejore tanto el rendimiento, no somos entes de rutinas, sino que vamos mutando y cambiando constantemente, y eso se ve reflejado en nuestras preferencias.
+
+En general un muy buen paper, aunque habria sido interesante revisar que otras matrices de embedding se generaron.
