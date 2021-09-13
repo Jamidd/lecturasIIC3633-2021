@@ -1,4 +1,4 @@
-#Content Based RecSys
+# Content Based RecSys
 
 Este es más que nada un paper educacional, no presenta ningún resultado nuevo. El paper parte hablando de cómo representar información, más que nada textos, para lo cual menciona la representación tf*idf, la cual es esencialmente un bag of words con puntaje, donde para cada palabra este sube si la frecuencia de esta aumenta en varios textos y disminuye si esta está presente en muchos textos. Estamos buscando palabras que aparecen mucho en un texto pero en pocos textos. 
 
