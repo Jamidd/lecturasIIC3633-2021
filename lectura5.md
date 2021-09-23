@@ -1,0 +1,9 @@
+# Combining Predictions for Accurate Recommender Systems
+
+Este paper habla de cómo crear ensambles de recomendadores para la base de datos del Netflix Price. Inicialmente parten con cuatro tipos de clasificadores base (KNN, SVD, AFM,  y RMB) además de Global Effects (GE) los cuales son marcadores generales de los datos para calcular features “handmade”.
+
+Para entrenar los algoritmos de ensamble, subdividieron aleatoriamente el set de train, agregando dos subsets pequeños extras. Un problema importante en este caso es como subdividieron el dataset para obtener los set pTrain y pTest. Al sacar una muestra tan pequeña de los datos de manera aleatoria, no tienes como garantizar la distribución de estos. En este caso las tendencias generales están claras, lo importante es poder ajustar bien a los extremos que es donde más errores se comete al recomendar. 
+
+Los algoritmos que usaron para hacer los ensambles fueron Linear Regression (LR), Binned linear regression (BLR), Neural Network Blending (NN), Bagged Gradient Boosted Decision Tree (BGBDT), Polynomial Regression (PR), Kernel Ridge Regression Blending (KRRB), K-Nearest Neighbors Blending (KNN). No es de extrañar que KNN además de ser lento, funcionó muy mal. Lo que sí es interesante es que si bien no me sorprende que NN funcionara bien, la mayor mejora que se logró hacer sobre este es super poca. También es interesante que DT funcionara tan bien. Si bien no es el caso ahora, DT es una de las técnicas más explicables en IA y lograr además tener un buen rendimiento puede ser útil para muchas aplicaciones que lo requieren. 
+
+Finalmente algo que me llamó la atención es que uno de los marcadores era de temporalidad, pero no hicieron mucho uso de ello. No se si LSTM ya se conocían, dado que este paper ya es un poco arcaico (JK), pero habría sido interesante explotar esto un poco más. 
